@@ -7,72 +7,50 @@
   <title>IKRA Business | Biznes və AI həlləri</title>
 
   <meta name="description"
-        content="IKRA Business — QULIYEV SARHAD AGA OGLU tərəfindən idarə olunan biznes brendi. Biznes avtomatlaşdırılması, süni intellekt və müştəri əlaqələrinin idarə edilməsi həlləri.">
+        content="IKRA Business — QULIYEV SARHAD AGA OGLU tərəfindən idarə olunan biznes brendi. Biznes avtomatlaşdırılması, süni intellekt və rəqəmsal həllər.">
 
   <style>
     * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-    }
-
-    html {
       scroll-behavior: smooth;
     }
 
     body {
-      font-family: Arial, Helvetica, sans-serif;
-      color: #172033;
+      font-family: Arial, sans-serif;
       background: #f7f9fc;
+      color: #172033;
       line-height: 1.6;
     }
 
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    .container {
-      width: min(1120px, 92%);
-      margin: auto;
-    }
-
-    /* HEADER */
-
     header {
-      background: #ffffff;
-      border-bottom: 1px solid #e8ecf3;
       position: sticky;
       top: 0;
       z-index: 1000;
+      background: white;
+      border-bottom: 1px solid #e6e9ef;
     }
 
     .nav {
-      height: 76px;
+      max-width: 1100px;
+      margin: auto;
+      padding: 18px 25px;
       display: flex;
-      align-items: center;
       justify-content: space-between;
+      align-items: center;
     }
 
     .logo {
-      font-size: 25px;
-      font-weight: 800;
+      font-size: 24px;
+      font-weight: bold;
       color: #111827;
-      letter-spacing: -0.5px;
-    }
-
-    .logo span {
-      color: #2563eb;
-    }
-
-    nav {
-      display: flex;
-      gap: 28px;
     }
 
     nav a {
-      color: #4b5563;
-      font-size: 15px;
+      text-decoration: none;
+      color: #374151;
+      margin-left: 25px;
       font-weight: 600;
     }
 
@@ -80,301 +58,156 @@
       color: #2563eb;
     }
 
-    /* HERO */
-
     .hero {
-      background: linear-gradient(135deg, #eef4ff, #ffffff);
-      padding: 105px 0 95px;
-    }
-
-    .hero-content {
-      max-width: 760px;
-    }
-
-    .badge {
-      display: inline-block;
-      background: #e0eaff;
-      color: #2456b8;
-      padding: 8px 15px;
-      border-radius: 30px;
-      font-size: 14px;
-      font-weight: 700;
-      margin-bottom: 22px;
+      background: linear-gradient(135deg, #111827, #2563eb);
+      color: white;
+      padding: 110px 25px;
+      text-align: center;
     }
 
     .hero h1 {
-      font-size: clamp(42px, 6vw, 68px);
-      line-height: 1.05;
-      letter-spacing: -2px;
-      margin-bottom: 25px;
-      color: #111827;
-    }
-
-    .hero h1 span {
-      color: #2563eb;
-    }
-
-    .hero p {
-      font-size: 19px;
-      color: #5b6473;
-      max-width: 680px;
-      margin-bottom: 34px;
-    }
-
-    .buttons {
-      display: flex;
-      gap: 14px;
-      flex-wrap: wrap;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 14px 23px;
-      border-radius: 9px;
-      font-weight: 700;
-      font-size: 15px;
-      transition: 0.2s;
-    }
-
-    .btn-primary {
-      background: #2563eb;
-      color: white;
-    }
-
-    .btn-primary:hover {
-      background: #1d4ed8;
-    }
-
-    .btn-secondary {
-      background: white;
-      border: 1px solid #d9dfeb;
-      color: #253044;
-    }
-
-    .btn-secondary:hover {
-      border-color: #2563eb;
-      color: #2563eb;
-    }
-
-    /* SECTIONS */
-
-    section {
-      padding: 85px 0;
-    }
-
-    .section-title {
-      text-align: center;
-      max-width: 700px;
-      margin: 0 auto 50px;
-    }
-
-    .section-title h2 {
-      font-size: 38px;
-      margin-bottom: 13px;
-      color: #111827;
-    }
-
-    .section-title p {
-      color: #697386;
-      font-size: 17px;
-    }
-
-    /* ABOUT */
-
-    .about {
-      background: white;
-    }
-
-    .about-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 55px;
-      align-items: center;
-    }
-
-    .about h2 {
-      font-size: 38px;
+      font-size: 52px;
       margin-bottom: 20px;
     }
 
-    .about p {
-      color: #5f6978;
-      margin-bottom: 17px;
-      font-size: 16px;
+    .hero p {
+      max-width: 720px;
+      margin: auto;
+      font-size: 20px;
+      opacity: 0.95;
     }
 
-    .company-box {
-      background: #f4f7fb;
-      border: 1px solid #e3e8f0;
-      border-radius: 16px;
-      padding: 30px;
+    .button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 14px 25px;
+      background: white;
+      color: #1d4ed8;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
     }
 
-    .company-box h3 {
-      margin-bottom: 12px;
-      color: #111827;
+    .button:hover {
+      background: #eef2ff;
     }
 
-    .company-name {
-      color: #2563eb;
-      font-weight: 800;
-      font-size: 18px;
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 85px 25px;
     }
 
-    /* SERVICES */
-
-    .services {
-      background: #f7f9fc;
+    section h2 {
+      font-size: 34px;
+      margin-bottom: 20px;
+      text-align: center;
     }
 
-    .service-grid {
+    .intro {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+      color: #4b5563;
+    }
+
+    .cards {
+      margin-top: 45px;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 20px;
     }
 
-    .service {
+    .card {
       background: white;
-      padding: 28px 23px;
-      border-radius: 15px;
-      border: 1px solid #e5eaf1;
-      transition: 0.2s;
+      padding: 30px 22px;
+      border-radius: 14px;
+      border: 1px solid #e5e7eb;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.04);
     }
 
-    .service:hover {
-      transform: translateY(-4px);
-      border-color: #bfd0f5;
-      box-shadow: 0 12px 30px rgba(20, 40, 80, 0.08);
+    .card h3 {
+      margin-bottom: 12px;
+      color: #111827;
     }
 
-    .icon {
-      width: 48px;
-      height: 48px;
-      border-radius: 12px;
-      background: #e8f0ff;
-      color: #2563eb;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 23px;
-      margin-bottom: 19px;
-    }
-
-    .service h3 {
-      margin-bottom: 10px;
-      font-size: 19px;
-    }
-
-    .service p {
+    .card p {
       color: #6b7280;
-      font-size: 14px;
     }
 
-    /* WHY */
-
-    .why {
+    .about-box {
+      max-width: 850px;
+      margin: 35px auto 0;
       background: white;
+      padding: 35px;
+      border-radius: 14px;
+      border: 1px solid #e5e7eb;
     }
-
-    .why-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
-    }
-
-    .why-card {
-      padding: 30px;
-      border: 1px solid #e4e8ef;
-      border-radius: 15px;
-    }
-
-    .why-card h3 {
-      margin-bottom: 10px;
-    }
-
-    .why-card p {
-      color: #697386;
-      font-size: 15px;
-    }
-
-    /* CONTACT */
 
     .contact {
-      background: #111827;
-      color: white;
-    }
-
-    .contact .section-title h2 {
-      color: white;
-    }
-
-    .contact .section-title p {
-      color: #b7c0ce;
-    }
-
-    .contact-box {
-      max-width: 760px;
-      margin: auto;
-      background: #1b2535;
-      border: 1px solid #2c394c;
-      border-radius: 18px;
-      padding: 35px;
+      background: #eef4ff;
+      max-width: none;
       text-align: center;
     }
 
-    .contact-box p {
-      color: #c5ccd7;
-      margin-bottom: 25px;
+    .contact p {
+      max-width: 700px;
+      margin: 10px auto;
+      color: #4b5563;
     }
-
-    /* FOOTER */
 
     footer {
-      background: #0b111b;
-      color: #9ca7b6;
-      padding: 28px 0;
+      background: #111827;
+      color: #d1d5db;
+      text-align: center;
+      padding: 35px 20px;
     }
 
-    .footer-content {
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
-      flex-wrap: wrap;
-      align-items: center;
-    }
-
-    .footer-brand {
+    footer strong {
       color: white;
-      font-weight: 800;
     }
 
-    .footer-small {
-      font-size: 13px;
+    .footer-links {
+      margin-top: 15px;
     }
 
-    /* MOBILE */
+    .footer-links a {
+      color: #d1d5db;
+      text-decoration: none;
+      margin: 0 10px;
+    }
 
-    @media (max-width: 850px) {
-      nav {
-        display: none;
+    .footer-links a:hover {
+      color: white;
+    }
+
+    @media (max-width: 800px) {
+      .hero h1 {
+        font-size: 38px;
       }
 
-      .about-grid,
-      .service-grid,
-      .why-grid {
+      .cards {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      nav a {
+        margin-left: 10px;
+        font-size: 14px;
+      }
+    }
+
+    @media (max-width: 550px) {
+      .nav {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .cards {
         grid-template-columns: 1fr;
       }
 
       .hero {
-        padding: 75px 0;
-      }
-
-      section {
-        padding: 65px 0;
-      }
-
-      .hero h1 {
-        letter-spacing: -1px;
+        padding: 80px 20px;
       }
     }
   </style>
@@ -383,14 +216,14 @@
 <body>
 
 <header>
-  <div class="container nav">
-    <a href="#" class="logo">IKRA <span>Business</span></a>
+  <div class="nav">
+    <div class="logo">IKRA Business</div>
 
     <nav>
-      <a href="#haqqimizda">Haqqımızda</a>
-      <a href="#xidmetler">Xidmətlər</a>
-      <a href="#ustunlukler">Üstünlüklər</a>
-      <a href="#elaqe">Əlaqə</a>
+      <a href="#home">Ana səhifə</a>
+      <a href="#about">Haqqımızda</a>
+      <a href="#services">Xidmətlər</a>
+      <a href="#contact">Əlaqə</a>
     </nav>
   </div>
 </header>
@@ -398,292 +231,126 @@
 
 <main>
 
-  <!-- HERO -->
+  <section class="hero" id="home">
+    <h1>Biznesinizi daha effektiv idarə edin.</h1>
 
-  <section class="hero">
-    <div class="container">
-      <div class="hero-content">
+    <p>
+      IKRA Business bizneslər üçün müasir avtomatlaşdırma,
+      süni intellekt və rəqəmsal müştəri əlaqəsi həlləri təqdim edir.
+    </p>
 
-        <div class="badge">
-          Biznes texnologiyaları və AI həlləri
-        </div>
+    <a class="button" href="#services">Xidmətlərimizə baxın</a>
+  </section>
 
-        <h1>
-          Biznesinizi daha
-          <span>effektiv</span>
-          idarə edin.
-        </h1>
 
-        <p>
-          IKRA Business müasir texnologiyalar, süni intellekt
-          və rəqəmsal həllər vasitəsilə bizneslərin müştərilərlə
-          daha effektiv əlaqə qurmasına və gündəlik proseslərini
-          avtomatlaşdırmasına kömək edir.
-        </p>
+  <section id="about">
+    <h2>Haqqımızda</h2>
 
-        <div class="buttons">
-          <a href="#xidmetler" class="btn btn-primary">
-            Xidmətlərimiz
-          </a>
+    <div class="intro">
+      <p>
+        IKRA Business müasir texnologiyalar və süni intellekt
+        həlləri vasitəsilə bizneslərin müştərilərlə daha effektiv
+        əlaqə qurmasına kömək edən biznes brendidir.
+      </p>
+    </div>
 
-          <a href="#haqqimizda" class="btn btn-secondary">
-            IKRA Business haqqında
-          </a>
-        </div>
+    <div class="about-box">
+      <h3>IKRA Business və hüquqi biznes əlaqəsi</h3>
 
-      </div>
+      <p>
+        <strong>IKRA Business</strong>,
+        <strong>QULIYEV SARHAD AGA OGLU</strong>
+        tərəfindən idarə olunan biznes brendidir.
+      </p>
+
+      <p style="margin-top:15px;">
+        Brend biznes avtomatlaşdırılması, süni intellekt,
+        müştəri kommunikasiya sistemləri və rəqəmsal həllər
+        istiqamətində fəaliyyət göstərir.
+      </p>
     </div>
   </section>
 
 
-  <!-- ABOUT -->
+  <section id="services">
+    <h2>Xidmətlərimiz</h2>
 
-  <section class="about" id="haqqimizda">
-    <div class="container">
+    <p class="intro">
+      Biznes proseslərinin daha rahat, sürətli və effektiv
+      idarə olunması üçün texnologiya əsaslı həllər.
+    </p>
 
-      <div class="about-grid">
+    <div class="cards">
 
-        <div>
-          <h2>IKRA Business haqqında</h2>
+      <div class="card">
+        <h3>Biznes avtomatlaşdırılması</h3>
+        <p>
+          Təkrarlanan biznes proseslərinin avtomatlaşdırılması
+          və iş axınının daha səmərəli qurulması.
+        </p>
+      </div>
 
-          <p>
-            IKRA Business müasir bizneslərin rəqəmsal inkişafına
-            yönəlmiş biznes brendidir.
-          </p>
+      <div class="card">
+        <h3>Süni intellekt həlləri</h3>
+        <p>
+          Bizneslərin gündəlik fəaliyyətində süni intellekt
+          texnologiyalarından istifadə imkanları.
+        </p>
+      </div>
 
-          <p>
-            Biznes avtomatlaşdırılması, süni intellekt və
-            müştəri əlaqələrinin idarə edilməsi sahələrində
-            texnologiya əsaslı həllər təqdim edir.
-          </p>
+      <div class="card">
+        <h3>Müştəri əlaqələri</h3>
+        <p>
+          Müştərilərlə kommunikasiya proseslərinin daha effektiv
+          və sistemli idarə olunması.
+        </p>
+      </div>
 
-          <p>
-            IKRA Business,
-            <strong>QULIYEV SARHAD AGA OGLU</strong>
-            tərəfindən idarə olunan biznes brendidir.
-          </p>
-        </div>
-
-        <div class="company-box">
-          <h3>Biznes məlumatları</h3>
-
-          <p>
-            <strong>Brend:</strong>
-          </p>
-
-          <div class="company-name">
-            IKRA Business
-          </div>
-
-          <br>
-
-          <p>
-            <strong>Hüquqi biznes adı:</strong>
-          </p>
-
-          <div>
-            QULIYEV SARHAD AGA OGLU
-          </div>
-
-          <br>
-
-          <p>
-            IKRA Business bu biznes tərəfindən idarə olunan
-            və təqdim olunan xidmətlər üçün istifadə edilən
-            biznes brendidir.
-          </p>
-        </div>
-
+      <div class="card">
+        <h3>Rəqəmsal həllər</h3>
+        <p>
+          Müasir biznes ehtiyaclarına uyğun rəqəmsal
+          texnologiya və sistem həlləri.
+        </p>
       </div>
 
     </div>
   </section>
 
 
-  <!-- SERVICES -->
+  <section id="contact" class="contact">
+    <h2>Əlaqə</h2>
 
-  <section class="services" id="xidmetler">
+    <p>
+      IKRA Business haqqında əlavə məlumat və əməkdaşlıq
+      üçün bizimlə əlaqə saxlaya bilərsiniz.
+    </p>
 
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Xidmətlərimiz</h2>
-
-        <p>
-          Biznes proseslərini sadələşdirmək və müştəri
-          əlaqələrini daha effektiv etmək üçün rəqəmsal həllər.
-        </p>
-      </div>
-
-
-      <div class="service-grid">
-
-        <div class="service">
-          <div class="icon">⚙</div>
-
-          <h3>Biznes avtomatlaşdırılması</h3>
-
-          <p>
-            Təkrarlanan biznes proseslərinin texnologiya
-            vasitəsilə avtomatlaşdırılması.
-          </p>
-        </div>
-
-
-        <div class="service">
-          <div class="icon">AI</div>
-
-          <h3>Süni intellekt həlləri</h3>
-
-          <p>
-            Müştəri əlaqələri və biznes prosesləri üçün
-            AI əsaslı həllərin tətbiqi.
-          </p>
-        </div>
-
-
-        <div class="service">
-          <div class="icon">☏</div>
-
-          <h3>Müştəri əlaqələri</h3>
-
-          <p>
-            Müştərilərlə ünsiyyətin daha sistemli və
-            effektiv idarə olunması.
-          </p>
-        </div>
-
-
-        <div class="service">
-          <div class="icon">◆</div>
-
-          <h3>Rəqəmsal həllər</h3>
-
-          <p>
-            Müasir biznes ehtiyaclarına uyğun texnologiya
-            və rəqəmsal həllərin hazırlanması.
-          </p>
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- WHY -->
-
-  <section class="why" id="ustunlukler">
-
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Niyə IKRA Business?</h2>
-
-        <p>
-          Texnologiyanı biznes məqsədləri ilə birləşdirən
-          praktiki yanaşma.
-        </p>
-      </div>
-
-
-      <div class="why-grid">
-
-        <div class="why-card">
-          <h3>Sadə yanaşma</h3>
-
-          <p>
-            Texnologiyanı biznes üçün mümkün qədər
-            rahat və istifadəsi asan şəkildə tətbiq edirik.
-          </p>
-        </div>
-
-
-        <div class="why-card">
-          <h3>Müasir texnologiya</h3>
-
-          <p>
-            Süni intellekt və rəqəmsal texnologiyalardan
-            biznes proseslərinin inkişafı üçün istifadə edirik.
-          </p>
-        </div>
-
-
-        <div class="why-card">
-          <h3>Müştəri yönümlü</h3>
-
-          <p>
-            Həllərin əsas məqsədi biznes və müştəri
-            arasındakı əlaqəni daha effektiv etməkdir.
-          </p>
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- CONTACT -->
-
-  <section class="contact" id="elaqe">
-
-    <div class="container">
-
-      <div class="section-title">
-
-        <h2>Əlaqə</h2>
-
-        <p>
-          IKRA Business haqqında əlavə məlumat almaq
-          və əməkdaşlıq imkanlarını müzakirə etmək üçün bizimlə əlaqə saxlayın.
-        </p>
-
-      </div>
-
-
-      <div class="contact-box">
-
-        <p>
-          IKRA Business<br>
-          QULIYEV SARHAD AGA OGLU tərəfindən idarə olunan biznes brendi
-        </p>
-
-        <a href="#haqqimizda" class="btn btn-primary">
-          Ətraflı məlumat
-        </a>
-
-      </div>
-
-    </div>
-
+    <a class="button" href="#home">Yuxarı qayıt</a>
   </section>
 
 </main>
 
 
 <footer>
+  <p>
+    <strong>IKRA Business</strong>
+  </p>
 
-  <div class="container footer-content">
+  <p>
+    QULIYEV SARHAD AGA OGLU
+  </p>
 
-    <div>
-      <div class="footer-brand">
-        IKRA Business
-      </div>
-
-      <div class="footer-small">
-        QULIYEV SARHAD AGA OGLU tərəfindən idarə olunan biznes brendi
-      </div>
-    </div>
-
-    <div class="footer-small">
-      © 2026 IKRA Business. Bütün hüquqlar qorunur.
-    </div>
-
+  <div class="footer-links">
+    <a href="#home">Ana səhifə</a>
+    <a href="#about">Haqqımızda</a>
+    <a href="#services">Xidmətlər</a>
+    <a href="#contact">Əlaqə</a>
   </div>
 
+  <p style="margin-top:20px;">
+    © 2026 IKRA Business. Bütün hüquqlar qorunur.
+  </p>
 </footer>
 
 </body>
